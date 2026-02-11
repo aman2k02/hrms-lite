@@ -38,6 +38,10 @@ def manage_employees():
         # Requirement: Duplicate employee handling
         if Employee.query.filter_by(emp_id=data.get('emp_id')).first():
             return jsonify({"error": "Duplicate Employee ID"}), 400
+        # ⭐ NEW VALIDATION STARTS HERE
+        if Employee.query.filter_by(email=data.get('email')).first():
+            return jsonify({"error": "Email already exists"}), 400
+        # ⭐ NEW VALIDATION ENDS HERE
         
         new_emp = Employee(
             emp_id=data['emp_id'], 
