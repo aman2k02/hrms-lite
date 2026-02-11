@@ -1,0 +1,160 @@
+/* --- 1. Existing Styles (Cards, Forms, Tables) --- */
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: var(--success-color);
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: var(--primary-color);
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-delete {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 6px 12px;
+}
+
+.btn-attendance {
+  background-color: var(--accent-color);
+  color: white;
+  margin-right: 5px;
+}
+
+/* --- 2. New UI Component Styles (Navbar & Modals) --- */
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Requirement: Clean layout and Intuitive navigation */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.attendance-history {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  max-height: 150px;
+  overflow-y: auto; /* Requirement: Realistic usability for many records */
+  text-align: left;
+}
+
+.attendance-history li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.tracker-card {
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+  margin-bottom: 20px;
+}
+
+.tracker-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.progress-bar-bg {
+  background: #e9ecef;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+}
+
+.progress-bar-fill {
+  background: #28a745;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
