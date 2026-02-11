@@ -19,15 +19,6 @@ https://github.com/aman2k02/hrms-lite
 
 ---
 
-## 📸 Screenshots For Understanding
-
-<img width="1339" height="595" alt="screen1" src="https://github.com/user-attachments/assets/69774d86-dad7-4263-afe8-9e67a59d187e" />
-
-<img width="1339" height="595" alt="screen2" src="https://github.com/user-attachments/assets/69774d86-dad7-4263-afe8-9e67a59d187e" />
-
-<img width="1339" height="595" alt="screen3" src="https://github.com/user-attachments/assets/69774d86-dad7-4263-afe8-9e67a59d187e" />
-
-<img width="1339" height="595" alt="screen4" src="https://github.com/user-attachments/assets/69774d86-dad7-4263-afe8-9e67a59d187e" />
 
 ---
 
